@@ -1,0 +1,27 @@
+{
+  "name": "genetic.js",
+  "version": "0.1.0",
+  "description": "library to calculate equations using Genetic Algorithm.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_packages/.bin/jasmine-node spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andretf/genetic.js.git"
+  },
+  "keywords": [
+    "javascript",
+    "genetic",
+    "algorithm"
+  ],
+  "author": "Andre Figueiredo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andretf/genetic.js/issues"
+  },
+  "homepage": "https://github.com/andretf/genetic.js#readme",
+  "dependencies": {
+    "jasmine-node": "^1.14.5"
+  }
+}
