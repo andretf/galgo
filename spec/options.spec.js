@@ -40,7 +40,7 @@ describe('options.generationsQty', function(){
         expect(ga.options.generationsQty).toBe(defaultValue);
     });
 
-    it('should generate initial population of specified size', function(){
+    it('should run specified quantity of generations', function(){
         ga.options.generationsQty = 20;
         var result = ga.run();
         expect(result.history.length).toBe(20);
