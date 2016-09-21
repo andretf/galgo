@@ -182,7 +182,7 @@ var genetic = (function () {
         objectiveFunction: objectiveFunction,
         options: {
             chromosomeLength: 4,
-            generationsQty: 5,
+            generationsQty: 25,
             mutationProbability: 0.02,
             populationSize: 10,
 
