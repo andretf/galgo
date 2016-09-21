@@ -5,10 +5,10 @@ function getRandomPosition(size) {
 }
 
 var Chromosome = function (value) {
-    var chromosomeLength = genetic.options.chromosomeLength;
-    var mutationProbability = genetic.mutationProbability;
-    var max = genetic.options.interval.max;
-    var min = genetic.options.interval.min;
+    var chromosomeLength = galgo.options.chromosomeLength;
+    var mutationProbability = galgo.mutationProbability;
+    var max = galgo.options.interval.max;
+    var min = galgo.options.interval.min;
 
     var chromosome = {
         decode: decode,
@@ -49,7 +49,7 @@ var Chromosome = function (value) {
 };
 
 var Individual = function (parent1, parent2) {
-    var chromosomeLength = genetic.options.chromosomeLength;
+    var chromosomeLength = galgo.options.chromosomeLength;
     var individual = {};
 
     if (!parent1 && !parent2) {
@@ -67,7 +67,7 @@ var Individual = function (parent1, parent2) {
         individual.chromosomes = mutate(individual.chromosomes);
     }
 
-    individual.fitness = genetic.objectiveFunction(
+    individual.fitness = galgo.objectiveFunction(
         individual.chromosomes.x.decode(),
         individual.chromosomes.y.decode()
     );
@@ -137,14 +137,14 @@ function createOffspring(parent1, parent2) {
 function run() {
     var startTimer = process.hrtime();
 
-    var population = seedPopulation(genetic.options.populationSize);
+    var population = seedPopulation(galgo.options.populationSize);
     var result = {
         solution: {},
         history: [],
         profiler: {}
     };
 
-    for (var ngen = 0; ngen < genetic.options.generationsQty; ngen++) {
+    for (var ngen = 0; ngen < galgo.options.generationsQty; ngen++) {
         var bestParents = selectBest(population);
 
         result.history.push({
@@ -177,7 +177,7 @@ function run() {
     return result;
 }
 
-var genetic = (function () {
+var galgo = (function () {
     var geneticObject = {
         objectiveFunction: objectiveFunction,
         options: {
@@ -198,4 +198,4 @@ var genetic = (function () {
     return geneticObject;
 })();
 
-module.exports = genetic;
+module.exports = galgo;

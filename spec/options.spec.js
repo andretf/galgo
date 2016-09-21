@@ -1,4 +1,4 @@
-var ga = require('../genetic');
+var ga = require('../galgo');
 
 describe('options', function() {
     it('should has options attribute', function(){

@@ -1,8 +1,8 @@
 {
-  "name": "genetic.js",
+  "name": "galgo",
   "version": "0.1.0",
-  "description": "library to calculate equations using Genetic Algorithm.",
-  "main": "index.js",
+  "description": "Library to calculate solutions using Genetic Algorithm.",
+  "main": "galgo.js",
   "scripts": {
     "test": "./node_modules/.bin/jasmine-node spec"
   },
@@ -13,7 +13,14 @@
   "keywords": [
     "javascript",
     "genetic",
-    "algorithm"
+    "algorithm",
+    "crossover",
+    "mutation",
+    "offspring",
+    "generation",
+    "chromosome",
+    "gene",
+    "selection"
   ],
   "author": "Andre Figueiredo",
   "license": "MIT",

@@ -1,2 +1,2 @@
-# genetic.js
-library to calculate equations using Genetic Algorithm.
+# galgo
+Library to calculate solutions using Genetic Algorithm.
