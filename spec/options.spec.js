@@ -20,7 +20,7 @@ describe('options', function() {
 });
 
 describe('options.populationSize', function(){
-    var defaultValue = 10;
+    var defaultValue = 100;
 
     it('should defaults to ' + defaultValue, function(){
         expect(ga.options.populationSize).toBe(defaultValue);
