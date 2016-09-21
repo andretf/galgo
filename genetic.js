@@ -141,9 +141,7 @@ function run() {
     var result = {
         solution: {},
         history: [],
-        profiler: {
-            elapsedSeconds: -1
-        }
+        profiler: {}
     };
 
     for (var ngen = 0; ngen < genetic.options.generationsQty; ngen++) {
@@ -166,7 +164,10 @@ function run() {
         population = newPopulation;
     }
 
-    result.profiler.elapsedTime = parseFloat(process.hrtime(startTimer).join('.'));
+    result.profiler = {
+        elapsedTime: parseFloat(process.hrtime(startTimer).join('.'))
+    };
+
     result.solution = {
         x: bestParents[0].chromosomes.x.decode().toFixed(4),
         y: bestParents[0].chromosomes.x.decode().toFixed(4),
