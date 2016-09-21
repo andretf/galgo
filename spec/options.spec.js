@@ -46,3 +46,11 @@ describe('options.generationsQty', function(){
         expect(result.history.length).toBe(20);
     });
 });
+
+describe('options.chromosomeLength', function(){
+    var defaultValue = 4;
+
+    it('should defaults to ' + defaultValue, function(){
+        expect(ga.options.chromosomeLength).toBe(defaultValue);
+    });
+});
