@@ -164,14 +164,14 @@ function run() {
         population = newPopulation;
     }
 
-    result.profiler = {
-        elapsedTime: parseFloat(process.hrtime(startTimer).join('.'))
-    };
-
     result.solution = {
         x: bestParents[0].chromosomes.x.decode().toFixed(4),
         y: bestParents[0].chromosomes.x.decode().toFixed(4),
         z: bestParents[0].fitness
+    };
+
+    result.profiler = {
+        elapsedTime: parseFloat(process.hrtime(startTimer).join('.'))
     };
 
     return result;
