@@ -9,7 +9,7 @@ Current specs:
 ## Using
 
     var galgo = require('galgo');
-    galgo.objectiveFunction = myFitnessFunction;
+    galgo.fitnessFunction = myFitnessFunction;
     galgo.options = myOptions;    // optionally set 1 or more options (or replace by its own)
     var result = galgo.run();
 
@@ -28,11 +28,11 @@ Options with default values, that can be changed through `galgo.options`:
         }
     }
 
-## Objective Function
+## Fitness Function
 
-On this initial version, *galgo* expects objective function, or **fitness function**, only with 1 or 2 variables.
+On this initial version, *galgo* expects fitness function, or **fitness function**, only with 1 or 2 variables.
 
-It's defined by `galgo.objectiveFunction`:
+It's defined by `galgo.fitnessFunction`:
 
     function myFitnessFn(x, y) {
         return x * x + 4 * y * y + 4 * y + x;
@@ -41,7 +41,7 @@ It's defined by `galgo.objectiveFunction`:
 
 ## TODO
 
-- Allow **n** variables in objective function
-- Choose to **min** or **max** the objective function
+- Allow **n** variables in fitness function
+- Choose to **min** or **max** the fitness function
 - Allow Elitism
 - Surviving parents with max-age option

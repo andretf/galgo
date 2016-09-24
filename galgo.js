@@ -67,7 +67,7 @@ var Individual = function (parent1, parent2) {
         individual.chromosomes = mutate(individual.chromosomes);
     }
 
-    individual.fitness = galgo.objectiveFunction(
+    individual.fitness = galgo.fitnessFunction(
         individual.chromosomes.x.decode(),
         individual.chromosomes.y.decode()
     );
@@ -118,8 +118,9 @@ function seedPopulation(populationSize) {
     return population;
 }
 
-function objectiveFunction(x, y) {
-    var z = (x - y) * (-x * Math.sin(Math.sqrt(Math.abs(x))) - y * Math.sin(Math.sqrt(Math.abs(y))));
+function fitnessFunction(x, y) {
+//    var z = (x - y) * (-x * Math.sin(Math.sqrt(Math.abs(x))) - y * Math.sin(Math.sqrt(Math.abs(y))));
+var z = x * x + 4 * y * y + 4 * y + x;
     return z;
 }
 
@@ -179,12 +180,12 @@ function run() {
 
 var galgo = (function () {
     var geneticObject = {
-        objectiveFunction: objectiveFunction,
+        fitnessFunction: fitnessFunction,
         options: {
-            chromosomeLength: 4,
-            generationsQty: 25,
+            chromosomeLength: 10,
+            generationsQty: 5,
             mutationProbability: 0.02,
-            populationSize: 100,
+            populationSize: 10000,
 
             // [min, max] objective function x, y variable
             interval: {
