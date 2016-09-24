@@ -3,7 +3,7 @@ Library to calculate **minimal solutions** using Genetic Algorithm.
 
 Current specs:
 - Each solution for a population generates 2 children solutions
-- Using **Elitism**: only best 50% of generate children survive to generate next solutions
+- Only best 50% of generate children survive to generate next solutions
 - No parents surviving
 
 ## Using
@@ -43,5 +43,5 @@ It's defined by `galgo.objectiveFunction`:
 
 - Allow **n** variables in objective function
 - Choose to **min** or **max** the objective function
-- Enable/Disable Elitism
+- Allow Elitism
 - Surviving parents with max-age option
