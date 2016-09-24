@@ -1,5 +1,5 @@
 # galgo
-Library to calculate *minimal solutions* using Genetic Algorithm.
+Library to calculate **minimal solutions** using Genetic Algorithm.
 
 Current specs:
 - Each solution for a population generates 2 children solutions
@@ -37,3 +37,11 @@ It's defined by `galgo.objectiveFunction`:
     function myFitnessFn(x, y) {
         return x * x + 4 * y * y + 4 * y + x;
     }
+
+
+## TODO
+
+- Allow **n** variables in objective function
+- Choose to **min** or **max** the objective function
+- Enable/Disable Elitism
+- Surviving parents with max-age option
