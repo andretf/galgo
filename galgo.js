@@ -183,9 +183,9 @@ var galgo = (function () {
         fitnessFunction: fitnessFunction,
         options: {
             chromosomeLength: 10,
-            generationsQty: 5,
+            generationsQty: 25,
             mutationProbability: 0.02,
-            populationSize: 10000,
+            populationSize: 250,
 
             // [min, max] objective function x, y variable
             interval: {

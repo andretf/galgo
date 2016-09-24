@@ -20,7 +20,7 @@ describe('options', function() {
 });
 
 describe('options.populationSize', function(){
-    var defaultValue = 100;
+    var defaultValue = 250;
 
     it('should defaults to ' + defaultValue, function(){
         expect(ga.options.populationSize).toBe(defaultValue);
@@ -48,7 +48,7 @@ describe('options.generationsQty', function(){
 });
 
 describe('options.chromosomeLength', function(){
-    var defaultValue = 4;
+    var defaultValue = 10;
 
     it('should defaults to ' + defaultValue, function(){
         expect(ga.options.chromosomeLength).toBe(defaultValue);
