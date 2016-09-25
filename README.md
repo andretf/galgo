@@ -41,7 +41,7 @@ It's defined by `galgo.fitnessFunction`:
 
 ## TODO
 
-- Allow **n** variables in fitness function
-- Choose to **min** or **max** the fitness function
-- Allow Elitism
-- Surviving parents with max-age option
+- [#1](https://github.com/andretf/galgo/issues/1): Allow **n** variables in fitness function
+- [#2](https://github.com/andretf/galgo/issues/2): Choose to **min** or **max** the fitness function
+- [#3](https://github.com/andretf/galgo/issues/3): Allow Elitism
+- [#4](https://github.com/andretf/galgo/issues/4): Surviving parents with max-age option
