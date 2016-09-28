@@ -99,9 +99,16 @@ var Individual = function (parent1, parent2) {
 function selectBest(population) {
     var halfCutPosition = Math.ceil(population.length / 4) * 2;
 
-    population.sort(function (curr, next) {
-        return curr.fitness - next.fitness;
-    });
+    if (galgo.options.minimize){
+        population.sort(function (curr, next) {
+            return curr.fitness - next.fitness;
+        });
+    }
+    else if (galgo.options.maximize) {
+        population.sort(function (curr, next) {
+            return next.fitness - curr.fitness ;
+        });
+    }
 
     var halfBest = population.slice(0, halfCutPosition);
 
@@ -186,6 +193,8 @@ var galgo = (function () {
             generationsQty: 25,
             mutationProbability: 0.02,
             populationSize: 250,
+            maximize: false,
+            minimize: true,
 
             // [min, max] objective function x, y variable
             interval: {
