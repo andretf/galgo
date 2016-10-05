@@ -127,7 +127,7 @@ function seedPopulation(populationSize) {
 
 function fitnessFunction(x, y) {
 //    var z = (x - y) * (-x * Math.sin(Math.sqrt(Math.abs(x))) - y * Math.sin(Math.sqrt(Math.abs(y))));
-var z = x * x + 4 * y * y + 4 * y + x;
+    var z = x * x + 4 * y * y + 4 * y + x; // x² + 4y² + 4y + x
     return z;
 }
 
