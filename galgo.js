@@ -159,7 +159,7 @@ function run() {
             generation: ngen + 1,
             individualsQty: population.length,
             x: bestParents[0].chromosomes.x.decode().toFixed(4),
-            y: bestParents[0].chromosomes.x.decode().toFixed(4),
+            y: bestParents[0].chromosomes.y.decode().toFixed(4),
             z: bestParents[0].fitness
         });
 
@@ -174,7 +174,7 @@ function run() {
 
     result.solution = {
         x: bestParents[0].chromosomes.x.decode().toFixed(4),
-        y: bestParents[0].chromosomes.x.decode().toFixed(4),
+        y: bestParents[0].chromosomes.y.decode().toFixed(4),
         z: bestParents[0].fitness
     };
 
