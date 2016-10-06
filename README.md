@@ -1,5 +1,5 @@
 # galgo
-Library to calculate **minimal solutions** using Genetic Algorithm.
+Library to calculate **minimal and maximum solutions** using Genetic Algorithm.
 
 Current specs:
 - Each solution for a population generates 2 children solutions
