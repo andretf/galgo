@@ -28,7 +28,7 @@
     "url": "https://github.com/andretf/genetic.js/issues"
   },
   "homepage": "https://github.com/andretf/genetic.js#readme",
-  "dependencies": {
+  "devDependencies": {
     "eslint": "^3.5.0",
     "jasmine-node": "^1.14.5"
   }
