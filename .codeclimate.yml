@@ -12,4 +12,6 @@ ratings:
   paths:
   - "galgo.js"
 exclude_paths:
-- spec/
+- "spec/"
+- "**.min.js"
+- "!**.js"
