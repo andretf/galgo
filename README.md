@@ -34,7 +34,8 @@ On this initial version, *galgo* expects fitness function, or **fitness function
 
 It's defined by `galgo.fitnessFunction`:
 
-    function myFitnessFn(x, y) {
+    var galgo = require('galgo');
+    galgo.fitnessFunction = function myFitnessFn(x, y) {
         return x * x + 4 * y * y + 4 * y + x;
     }
 
