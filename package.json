@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andretf/genetic.js.git"
+    "url": "git+https://github.com/andretf/galgo.git"
   },
   "keywords": [
     "javascript",
@@ -25,9 +25,9 @@
   "author": "Andre Figueiredo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/andretf/genetic.js/issues"
+    "url": "https://github.com/andretf/galgo/issues"
   },
-  "homepage": "https://github.com/andretf/genetic.js#readme",
+  "homepage": "https://github.com/andretf/galgo#readme",
   "devDependencies": {
     "eslint": "^3.5.0",
     "istanbul": "0.4.5",
