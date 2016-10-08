@@ -4,7 +4,7 @@
   "description": "Library to calculate solutions using Genetic Algorithm.",
   "main": "galgo.js",
   "scripts": {
-    "test": "./node_modules/.bin/jasmine-node spec"
+    "test": "istanbul cover -x spec/* ./node_modules/.bin/jasmine-node spec"
   },
   "repository": {
     "type": "git",
@@ -30,6 +30,7 @@
   "homepage": "https://github.com/andretf/genetic.js#readme",
   "devDependencies": {
     "eslint": "^3.5.0",
+    "istanbul": "0.4.5",
     "jasmine-node": "^1.14.5"
   }
 }
