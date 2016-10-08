@@ -1,3 +1,7 @@
+[![GitHub version](https://badge.fury.io/gh/andretf%2Fgalgo.svg)](https://badge.fury.io/gh/andretf%2Fgalgo)
+[![Code Climate](https://codeclimate.com/github/andretf/galgo/badges/gpa.svg)](https://codeclimate.com/github/andretf/galgo)
+[![Build Status](https://travis-ci.org/andretf/galgo.svg?branch=master)](https://travis-ci.org/andretf/galgo)
+[![Test Coverage](https://codeclimate.com/github/andretf/galgo/badges/coverage.svg)](https://codeclimate.com/github/andretf/galgo/coverage)
 # galgo
 Library to calculate **minimal and maximum solutions** using Genetic Algorithm.
 
