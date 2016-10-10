@@ -76,17 +76,17 @@ var Individual = function (parent1, parent2) {
 
     /////////////////////////////////////
     function crossover(parent1, parent2) {
-        var position = getRandomPosition(chromosomeLength);
+        var chromosomeIds = ['x', 'y'];
+        var result = {};
 
-        var chromosomeXValue = parent1.chromosomes.x.value.slice(0, position).concat(
-            parent2.chromosomes.x.value.slice(position));
-        var chromosomeYValue = parent1.chromosomes.y.value.slice(0, position).concat(
-            parent2.chromosomes.y.value.slice(position));
+        chromosomeIds.forEach(function(id){
+            var position = getRandomPosition(chromosomeLength);
+            var value = parent1.chromosomes[id].value.slice(0, position).concat(
+                parent2.chromosomes[id].value.slice(position));
+            result[id] = new Chromosome(value);
+        });
 
-        return {
-            x: new Chromosome(chromosomeXValue),
-            y: new Chromosome(chromosomeYValue)
-        };
+        return result;
     }
 
     function mutate(chromosomes) {
